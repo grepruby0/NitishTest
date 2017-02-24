@@ -8,6 +8,7 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="dob">Date of birth</string>
+    <string name="gender">Gender</string>
     <string name="done">Done</string>
     <string name="submit">Submit</string>
 </resources>

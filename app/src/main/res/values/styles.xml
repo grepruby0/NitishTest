@@ -33,4 +33,41 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="cb_container_style" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/major_padding</item>
+        <item name="android:paddingTop">@dimen/major_padding</item>
+        <item name="android:paddingLeft">@dimen/major_padding</item>
+        <item name="android:paddingRight">@dimen/major_padding</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="cb_text_ll_style" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="cb_text_style" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="cb_text_style.value">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+
+    <!--Divider-->
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_light</item>
+    </style>
+
 </resources>

@@ -2,7 +2,6 @@ package com.android.test;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -19,6 +18,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.android.test.custom.RoundedImageView;
+import com.android.test.model.DataModel;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -29,6 +29,8 @@ import java.util.regex.Pattern;
 
 public class UserFormActivity extends AppCompatActivity
         implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
+
+    public static final String PARSE_KEY = "com.android.text.parse_key";
 
     RoundedImageView mIvImage;
     EditText mEtUserName, mEtEmail, mEtPhoneNumber, mEtDOB;
@@ -47,7 +49,7 @@ public class UserFormActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_user_form);
         dataModel = new DataModel();
         initViews();
     }
@@ -141,7 +143,10 @@ public class UserFormActivity extends AppCompatActivity
             dataModel.setEmail(mEtEmail.getText().toString());
             dataModel.setPhoneNumber(mEtPhoneNumber.getText().toString());
             dataModel.setDob(mEtDOB.getText().toString());
-            Toast.makeText(this, "Go to details screen", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "Go to details screen", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this,UserDetailActivity.class);
+            intent.putExtra(PARSE_KEY,dataModel);
+            startActivity(intent);
         }
     }
 
