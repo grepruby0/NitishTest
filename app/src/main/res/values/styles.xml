@@ -8,4 +8,29 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="et_style" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingLeft">@dimen/et_padding_left</item>
+        <item name="android:paddingRight">@dimen/et_padding_right</item>
+        <item name="android:paddingBottom">@dimen/et_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/et_padding_top</item>
+        <item name="android:textSize">@dimen/et_txt_size</item>
+        <item name="android:layout_marginTop">@dimen/et_margin_top</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="btn_style" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_rounded_corner</item>
+        <item name="android:paddingLeft">@dimen/btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/btn_padding_right</item>
+        <item name="android:paddingBottom">@dimen/btn_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/btn_padding_top</item>
+        <item name="android:textSize">@dimen/btn_txt_size</item>
+        <item name="android:layout_marginTop">@dimen/btn_margin_top</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
