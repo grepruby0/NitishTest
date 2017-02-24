@@ -1,23 +1,25 @@
 package com.android.test;
 
+import android.net.Uri;
+
 /**
  * Created by rails-dev on 24/2/17.
  */
 
 public class DataModel {
 
-    String imagePath = "";
+    Uri imagePath;
     String userName = "";
     String email = "";
     String phoneNumber = "";
     String dob = "";
     String gender = "";
 
-    public String getImagePath() {
+    public Uri getImagePath() {
         return imagePath;
     }
 
-    public void setImagePath(String imagePath) {
+    public void setImagePath(Uri imagePath) {
         this.imagePath = imagePath;
     }
 
