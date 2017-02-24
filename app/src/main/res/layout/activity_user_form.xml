@@ -9,20 +9,20 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.android.test.MainActivity">
+    tools:context="com.android.test.UserFormActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
         >
 
-        <ImageView
+        <com.android.test.custom.RoundedImageView
             android:id="@+id/ivImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
             android:src="@mipmap/ic_camera" />
 
 
@@ -113,6 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/male"
+                android:checked="true"
                 />
             <RadioButton
                 android:id="@+id/female"
